@@ -1,1 +1,249 @@
-index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Infinity Snap | My Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      color: white;
+      background: linear-gradient(135deg, #10002b, #3c096c, #7209b7);
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 22px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .logo {
+      font-size: 25px;
+      font-weight: bold;
+      color: #ffbe0b;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 16px;
+    }
+
+    nav a:hover {
+      color: #ffbe0b;
+    }
+
+    .hero {
+      min-height: 75vh;
+      padding: 65px 8%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .hero-content {
+      max-width: 750px;
+    }
+
+    .tag {
+      color: #ffbe0b;
+      letter-spacing: 3px;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    h1 {
+      font-size: clamp(40px, 8vw, 72px);
+      margin: 20px 0;
+      line-height: 1.1;
+    }
+
+    h1 span {
+      background: linear-gradient(90deg, #ffbe0b, #ff4d9d, #80ffdb);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    .description {
+      color: #e0d7f5;
+      font-size: 17px;
+      line-height: 1.8;
+      margin-bottom: 30px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 14px 25px;
+      margin: 6px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      background: #ffbe0b;
+      color: #240046;
+      transition: 0.3s;
+    }
+
+    .button:hover {
+      transform: translateY(-4px);
+      background: #80ffdb;
+    }
+
+    .secondary {
+      background: transparent;
+      border: 2px solid white;
+      color: white;
+    }
+
+    section {
+      padding: 55px 8%;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 32px;
+      margin-bottom: 25px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.09);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 18px;
+      padding: 28px 20px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      border-color: #ffbe0b;
+    }
+
+    .card h3 {
+      color: #80ffdb;
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      color: #e0d7f5;
+      line-height: 1.7;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #d8c8f5;
+      border-top: 1px solid rgba(255,255,255,0.15);
+    }
+
+    @media (max-width: 500px) {
+      header {
+        justify-content: center;
+      }
+
+      nav a {
+        margin: 0 6px;
+        font-size: 14px;
+      }
+
+      .hero {
+        padding-top: 45px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">∞ Infinity Snap</div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="tag">WELCOME TO MY WORLD</p>
+
+        <h1>Ideas into <span>Infinity.</span></h1>
+
+        <p class="description">
+          Hey! Welcome to Infinity Snap — my personal space
+          to share my creativity, explore technology,
+          and turn big ideas into reality.
+        </p>
+
+        <a class="button" href="#projects">Explore My Work ↗</a>
+        <a class="button secondary" href="#about">Discover More</a>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About Me ✨</h2>
+      <p class="description">
+        I'm a curious learner who loves exploring new ideas,
+        learning new skills, and creating something meaningful.
+        This is where my journey begins!
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2>My Creative Space 🚀</h2>
+
+      <div class="cards">
+        <div class="card">
+          <h3>💻 Web Design</h3>
+          <p>Learning to build beautiful and useful websites.</p>
+        </div>
+
+        <div class="card">
+          <h3>📸 Photography</h3>
+          <p>Capturing special moments and creative perspectives.</p>
+        </div>
+
+        <div class="card">
+          <h3>🌟 New Ideas</h3>
+          <p>Exploring fresh ideas and turning them into projects.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Let's Connect! 💌</h2>
+      <p class="description">
+        Have an idea or want to connect? Find me online!
+      </p>
+      <a class="button" href="https://github.com/">My GitHub ↗</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Infinity Snap. Made with 💜 and creativity.</p>
+  </footer>
+
+</body>
+  </html>
