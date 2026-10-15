@@ -232,13 +232,36 @@
       </div>
     </section>
 
-    <section id="contact">
-      <h2>Let's Connect! 💌</h2>
-      <p class="description">
-        Have an idea or want to connect? Find me online!
-      </p>
-      <a class="button" href="https://github.com/">My GitHub ↗</a>
-    </section>
+<section id="contact">
+  <h2>Let's Connect! 💌</h2>
+
+  <p class="description">
+    Let's share ideas, create something amazing,
+    and stay connected!
+  </p>
+
+  <a
+    class="button"
+    href="https://www.instagram.com/infinity_snap_/"
+    target="_blank"
+    rel="noopener noreferrer">
+    📸 Instagram
+  </a>
+
+  <a
+    class="button secondary"
+    href="https://github.com/kopiprass-svg"
+    target="_blank"
+    rel="noopener noreferrer">
+    💻 GitHub
+  </a>
+
+  <a
+    class="button"
+    href="mailto:kopiprass@gmail.com">
+    ✉️ Email Me
+  </a>
+</Section>
   </main>
 
   <footer>
